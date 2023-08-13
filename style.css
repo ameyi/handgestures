@@ -1,0 +1,19 @@
+body{
+    background-color: white;
+}
+.heading{
+    font-weight: bold;
+    font-size: 25px;
+    letter-spacing: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+#camera, #result{
+    border: 2px dashed black;
+    width: 350px;
+    height: 300px;
+}
+label{
+    font-weight: bold;
+    letter-spacing: 5px;
+}

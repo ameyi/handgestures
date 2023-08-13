@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>Hand Gestures Project</title>
+       <!--Meta tag is for making website look proper on browser--> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <!--Link tag used for style.css bootstrap library--> <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+       <!--Connecting bootstrap Java library--> <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+       <!--Bootstrap also used for Java library--> <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+       <!--ML5.js library. ML5 stands for Machine Learning Version 5--> <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+       <!--For connecting the actual code with the javascript and the webcam library--> <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    
+        <!--Linking the HTML(Hyper Text Markup Language) to the style.css(style.cascadingstylesheet)--><link rel="stylesheet" type="text/css" href="style.css">
+        <!--Linking the HTML to main.js (js stands for javascript)--><script src="main.js"></script>
+      </head>
+    <body>
+        <div class="container">
+            <center>
+<h3 class="btn btn-success heading" style="text-align: center;">Hand Gestures Web App
+<br>
+<span>&#129782</span>
+<span>&#128076</span>
+<span>&#9996</span>
+<span>&#128077</span>
+<span>&#128078</span>
+<br>
+<br>
+</h3>
+<h3 style="color: cyan;">Take a picture of a handgesture to figure out its meaning</h3>
+<h5 style="color: lime;">Model is trained on the gestures shown above</h5>
+
+
+<div class="col-md-4">
+<label>Webcam View - </label>
+<div id="camera">
+</div>
+<button class="btn btn-primary" onclick="captureimage()">Capture Image</button>
+</div>
+
+<div class="col-md-4">
+   <label>Prediction 1-</label>
+   <p class="handgesture_name" id="handgesture"></p>
+   <p class="hand" id="updatehandgesture"></p>
+   <label>Prediction 2-</label>
+   <p class="handgesture_name" id="handgesture2"></p>
+   <p class="hand" id="updatehandgesture2"></p>
+    </div>
+
+<div class="col-md-4">
+    <label>Snapshot</label>
+    <div id="result">
+    </div>
+    <button class="btn btn-success" onclick="check()">Check</button>
+</div>
+</center>
+</div>
+    </body>
+</html>
